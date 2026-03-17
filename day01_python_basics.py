@@ -33,7 +33,7 @@ print (len(my_list)) # It Will Print The Length Of The Array
 #Two Major Diffrence In Python Object And JavaScript Object
 #1. In Python Object Is Called Dictionary
 #2 Key Will Be In String Format 
-#3 We Can Not Mutation The Object Like JavaScript Object'
+#3 We Can Not Mutation The Object Like JavaScript Object We need To Reassign The Object To Update The Value In Python Dictionary'
 
 my_dict = {
     'name': 'Yogesh',
@@ -109,5 +109,5 @@ print (f'Player Name Is type{type(player_name)} And Value Is {player_name}')
 
 player_age = (input('Enter Player Age:')) # It Will Give Error TypeError: '>' not supported between instances of 'str' and 'int'
 player_age = int(input('Enter Player Age:')) # It Will Convert The Input To Integer Type So We Can Compare It With Integer Value
-if (player_age >18):
+if player_age > 18:    
     print (f'Player is Eligible to Play The Game,{player_age}')
