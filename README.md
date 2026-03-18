@@ -1,7 +1,7 @@
 Progress
 
 Day 1 ✅ Python Basics
-Day 2 ⏳ Lists & Loops
+Day 2 ✅ Lists & Loops
 Day 3 ⏳ Functions
 
 
