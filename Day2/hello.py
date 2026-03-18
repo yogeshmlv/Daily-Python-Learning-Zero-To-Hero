@@ -9,7 +9,7 @@ for num in number :
    print (f'Number Is {num}')
 
 for i in range (5):
-      print (f'Number Is Yogesh Singh')
+      print (f'Number Is Yogesh Singh') # range() Function Used To Generate A Sequence Of Numbers , It Will Start From 0 By Default And It Will End At The Number We Provide In The Range Function -1
 
 friends_name = ["Yogesh","Rohit","Satyarth","Ankit","Rahul"]
 for friend in friends_name:
@@ -46,3 +46,5 @@ print ('\n -- Selling The  Rusty Sword --')
 backpack.remove("rusty sword") # .remove() Function Used To Remove An Item From The List
 coins = coins + 10
 print (f' You Sold The Rusty Sword For 10 Coins , Now You Have {coins} Coins And Your Backpack Now Contains : {backpack}')
+
+#The Day Two "Final Boss"
