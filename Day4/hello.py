@@ -17,3 +17,17 @@ def tax_calculation (price,tax_rate):
 
 my_total_price = tax_calculation(1000,0.09)
 print (f"Yogesh Singh , The Total Price After Tax is {my_total_price}")
+
+# Try and Except Block
+def divide_numbers (num1,num2):
+    try :
+        result = num1 / num2
+        print(f"The result of {num1} divided by {num2} is: {result}")
+    except ZeroDivisionError:
+        print("Error: Cannot divide by zero.")
+    except TypeError:
+        print("Error: Both inputs must be numbers.")
+
+divide_numbers(10, 2)  # Valid division
+divide_numbers(10, 0)  # Division by zero
+divide_numbers(10, 'a')  # Invalid type
