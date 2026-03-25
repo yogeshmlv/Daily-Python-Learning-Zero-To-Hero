@@ -1,0 +1,2 @@
+Player Gold: 100
+Player Weapon: Sword
