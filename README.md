@@ -2,7 +2,9 @@ Progress
 
 Day 1 ✅ Python Basics
 Day 2 ✅ Lists & Loops
-Day 3 ⏳ Functions
+Day 3 ✅ Functions
+Day 4 ✅ 
+Day 5 ✅ 
 
 
 # Python FastAPI Learning Journey 🚀
