@@ -3,6 +3,7 @@
 # test_function()
 # def is Keyword in Python?
 # def Keyword in Python is a reserved word that has a specific meaning and cannot be used as an identifier (such as variable names, function names, etc.) in the code. Examples of keywords in Python include "if", "else", "for", "while", "def", "return", and many more. These keywords are essential for the structure and syntax of the Python programming language.
+import random
 def greet(name):
     print(f"Hello, {name}!")
 greet("Yogesh Singh")
@@ -31,3 +32,9 @@ def divide_numbers (num1,num2):
 divide_numbers(10, 2)  # Valid division
 divide_numbers(10, 0)  # Division by zero
 divide_numbers(10, 'a')  # Invalid type
+
+
+print_randoom_num = ['1','2','3','4','5','6','7','8','9','10']
+choice_number = random.choice(print_randoom_num)
+print(f"The random number chosen is: {choice_number}")
+print("This is the end of the program.")
