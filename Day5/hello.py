@@ -20,11 +20,12 @@ print("Player information has been saved to player_info.txt")
 
 print("Main Menu ")
 print ("Game Is loading...")
-
-with open ("player_info.txt","r") as file:
-    saved_lines = file.readlines() # The readlines() method is used to read all the lines from a file and return them as a list of strings. Each string in the list represents a single line from the file, including the newline character at the end of each line. This method is useful when you want to process or manipulate each line of the file separately, as it allows you to easily access and iterate through the lines using list indexing or loops.
-
-    player_gold = int(saved_lines[0].split(":")[1].strip()) # strip() method is used to remove any leading and trailing whitespace characters from a string. In this case, it is used to clean up the extracted value of player gold after splitting the line by the colon (":") character. The split() method is used to divide the string into a list based on the specified delimiter (in this case, ":"). The [1] index is used to access the second element of the resulting list, which contains the value of player gold. Finally, int() is used to convert the string representation of player gold into an integer for further calculations or usage in the program.
-    player_weapon = saved_lines[1].split(":")[1].strip() 
-print (f"Player Gold: {player_gold}")
-print (f"Player Weapon: {player_weapon}")
+try:
+    with open ("player_info.txt","r") as file:
+        saved_lines = file.readlines() # The readlines() method is used to read all the lines from a file and return them as a list of strings. Each string in the list represents a single line from the file, including the newline character at the end of each line. This method is useful when you want to process or manipulate each line of the file separately, as it allows you to easily access and iterate through the lines using list indexing or loops.
+        player_gold = int(saved_lines[0].split(":")[1].strip()) # strip() method is used to remove any leading and trailing whitespace characters from a string. In this case, it is used to clean up the extracted value of player gold after splitting the line by the colon (":") character. The split() method is used to divide the string into a list based on the specified delimiter (in this case, ":"). The [1] index is used to access the second element of the resulting list, which contains the value of player gold. Finally, int() is used to convert the string representation of player gold into an integer for further calculations or usage in the program.
+        player_weapon = saved_lines[1].split(":")[1].strip() 
+    print (f"Player Gold: {player_gold}")
+    print (f"Player Weapon: {player_weapon}")
+except FileNotFoundError:
+    print("Error: player_info.txt not found. Please ensure the file exists and try again.")
