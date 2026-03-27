@@ -1,10 +1,12 @@
 Progress
 
-Day 1 ✅ Python Basics
-Day 2 ✅ Lists & Loops
-Day 3 ✅ Functions
-Day 4 ✅ 
-Day 5 ✅ 
+Day 1: Variables, F-strings, If/Else
+Day 2: Lists, Dictionaries, For Loops
+Day 3: While Loops (Game Loop)
+Day 4: Functions (def)
+Day 5: Imports (random, time) and Saving Files (with open)
+Day 6: Classes (class, __init__, self)
+Day 7: List Comprehensions
 
 
 # Python FastAPI Learning Journey 🚀
