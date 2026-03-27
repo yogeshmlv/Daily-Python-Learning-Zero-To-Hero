@@ -11,3 +11,9 @@ list_item = ["magic sword ", " hero shield ", "health potion ", "Bow"] #In Pytho
 updated_list = [item.title() for item in list_item if "sword" in item] # We Use 'strip()' To Remove Any Leading Or Trailing Whitespace From The Item Before Converting It To Title Case.
 
 print(updated_list) # Output: ['Magic Sword', 'Hero Shield', 'Health Potion', 'Bow']
+
+# Even if they accidentally type "   ATTACK   ", this fixes it instantly!
+action = input("What do you do? ").strip().lower()
+
+if action == "attack":
+    print("You swing your weapon!")
