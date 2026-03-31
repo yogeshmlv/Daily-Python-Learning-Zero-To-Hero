@@ -1,5 +1,7 @@
 # Api fetch 
 
+import json
+
 import requests
 
 print ('Welcome to the Pokemon API Fetching!')
@@ -11,6 +13,8 @@ while True:
 
     response = requests.get(f'https://pokeapi.co/api/v2/pokemon/{pokemon_name}')
     if response.status_code == 200:
+        with open(f'{pokemon_name}_data.json', 'w') as f:
+            json.dump(response.json(), f, indent=4)
         pokemon_data = response.json()
         print(f"Name: {pokemon_data['name'].capitalize()}")
         print(f"Height: {pokemon_data['height']}")
